@@ -18,3 +18,5 @@ When employing a test-driven development strategy, coders first write tests to c
 4. When the code can pass the test, both the test and the code are refactored for simplicity and to eliminate any unnecessary code.
 5. When the sufficiently refactored software can pass the refactored test, developers move on to the next wanted software function. Testers then write and run tests for each new feature. 
 
+https://www.ibm.com/think/topics/test-driven-development
+https://www.ibm.com/think/topics/unit-testing
