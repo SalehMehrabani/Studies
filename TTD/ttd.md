@@ -13,10 +13,31 @@ Sometimes referred to as simply TDD, developer TDD requires coders to write sing
 5 steps of the test-driven development cycle
 When employing a test-driven development strategy, coders first write tests to check each individual element or function of a piece of software before writing enough code to pass that individual test. Once completed, the software is tested again, and if it passes, the code is refined (a process known as refactoring) to include only essential elements. Developers then repeat this process for each subsequent software function. 
 1. Before writing the code for a certain software function, developers first write an individual unit test for that function.
-2. Developers then run the test, which should fail because the code function hasn’t been written yet. This step is important to confirm that the test itself is functional and does not return any false positives. If the code passes, it indicates that the test needs to be rewritten.
+2. Developers then run the test, which should fail because the function hasn’t been written yet. This step is important to confirm that the test itself is functional and does not return any false positives. If the code passes, it indicates that the test needs to be rewritten.
 3. When the program fails the test, developers write only enough extra software code to pass the test.
 4. When the code can pass the test, both the test and the code are refactored for simplicity and to eliminate any unnecessary code.
 5. When the sufficiently refactored software can pass the refactored test, developers move on to the next wanted software function. Testers then write and run tests for each new feature. 
 
 https://www.ibm.com/think/topics/test-driven-development
 https://www.ibm.com/think/topics/unit-testing
+
+My first TDD Code using Vitest & TypeScript:
+```
+//calculator.test.ts
+import { describe, expect, it } from "vitest";
+import { add } from "./calculator";
+
+describe("add", () => {
+  it("It should add two number together", () => {
+    expect(add(2, 3)).toBe(5);
+  });
+});
+```
+
+```
+//calculator.ts
+export function add(a: number, b: number) {
+  return a + b;
+  
+}
+```
