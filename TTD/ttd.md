@@ -1,3 +1,4 @@
+# Test-driven development
 Test-driven development (TDD) is an approach to software development in which software tests are written before their corresponding functions.
 Programming in this style strengthens the relationship between coding, testing(in the form of automated unit-level tests), and code design. While test-driven development might increase upfront development time, it has been demonstrated to improve code functionality and dexterity and save time overall.
 What is unit testing? Unit testing is a test-driven development (TDD) method for evaluating software that pays special attention to an individual component or unit of code- the smallest increment possible.
@@ -16,11 +17,13 @@ When employing a test-driven development strategy, coders first write tests to c
 2. Developers then run the test, which should fail because the function hasn’t been written yet. This step is important to confirm that the test itself is functional and does not return any false positives. If the code passes, it indicates that the test needs to be rewritten.
 3. When the program fails the test, developers write only enough extra software code to pass the test.
 4. When the code can pass the test, both the test and the code are refactored for simplicity and to eliminate any unnecessary code.
-5. When the sufficiently refactored software can pass the refactored test, developers move on to the next wanted software function. Testers then write and run tests for each new feature. 
+5. When the sufficiently refactored software can pass the refactored test, developers move on to the next wanted software function. Testers then write and run tests for each new feature.
 
-https://www.ibm.com/think/topics/test-driven-development
-https://www.ibm.com/think/topics/unit-testing
+Sources:
+* [IBM TDD](https://www.ibm.com/think/topics/test-driven-development)
+* [IBM Unit-testing](https://www.ibm.com/think/topics/unit-testing)
 
+## Examples:
 My first TDD Code using Vitest & TypeScript:
 ```
 //calculator.test.ts
