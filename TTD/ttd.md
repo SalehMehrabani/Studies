@@ -44,3 +44,8 @@ export function add(a: number, b: number) {
   
 }
 ```
+
+We can use Jest in JavaScript to run our tests:
+[jest](https://jestjs.io/)
+We also have end-to-end testing 
+[cypress](https://www.cypress.io/#create)
